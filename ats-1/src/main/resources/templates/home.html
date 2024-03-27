@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applicant Tracking System</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-image: url('background.jpg');
+	/* Specify the path to your background image */
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff; /* Change the color to your preference */
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 18px;
+}
+
+.btn:hover {
+	background-color: #0056b3; /* Change the hover color */
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to Applicant Tracking System</h1>
+		<a th:href="@{/login}">Login</a> 
+		<a th:href="@{/signup}">Sign Up</a>
+	</div>
+</body>
+</html>
